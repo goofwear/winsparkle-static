@@ -38,11 +38,15 @@
 extern "C" {
 #endif
 
+/*
 #ifdef BUILDING_WIN_SPARKLE
     #define WIN_SPARKLE_API __declspec(dllexport)
 #else
     #define WIN_SPARKLE_API __declspec(dllimport)
 #endif
+*/
+
+#define WIN_SPARKLE_API
 
 /*--------------------------------------------------------------------------*
                        Initialization and shutdown
@@ -66,7 +70,7 @@ extern "C" {
 
     @see win_sparkle_cleanup()
  */
-WIN_SPARKLE_API void __cdecl win_sparkle_init();
+WIN_SPARKLE_API void __cdecl win_sparkle_init(void* hInstance);
 
 /**
     Cleans up after WinSparkle.

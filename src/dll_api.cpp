@@ -44,8 +44,10 @@ extern "C"
                        Initialization and shutdown
  *--------------------------------------------------------------------------*/
 
-WIN_SPARKLE_API void __cdecl win_sparkle_init()
+WIN_SPARKLE_API void __cdecl win_sparkle_init(void* hInstance)
 {
+		winsparkle::UI::SetDllHINSTANCE((HINSTANCE)hInstance);
+
     try
     {
         // finish initialization

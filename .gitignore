@@ -11,6 +11,7 @@
 *.vcxproj.user
 ipch
 translations/*.mo
+translations/translations.aps
 3rdparty/wxWidgets/build/bakefiles/.bakefile_gen.state
 3rdparty/wxWidgets/lib/vc_lib
 3rdparty/wxWidgets/build/msw/*_*/
@@ -19,3 +20,4 @@ translations/*.mo
 packages
 pascal/lib/
 pascal/backup/
+.vs/

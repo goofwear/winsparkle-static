@@ -30,6 +30,7 @@
                                DllMain() hook
  *--------------------------------------------------------------------------*/
 
+#if 0
 extern "C"
 BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID /*lpReserved*/)
 {
@@ -40,3 +41,4 @@ BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID /*lpReserved*/)
 
     return TRUE;
 }
+#endif
